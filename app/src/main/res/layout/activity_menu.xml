@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#f6e58d"
+        android:contentDescription="@string/todo1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/salibkasih"
+        android:contentDescription="@string/todo2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/imageView2"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonkuliner"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#eb4d4b"
+            android:text="@string/kulinerbutton"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonwisata"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="130dp"
+            android:background="#6ab04c"
+            android:text="@string/wisatabutton"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttontentang"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="130dp"
+            android:background="#0984e3"
+            android:text="@string/tentangbutton"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonhotel"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="130dp"
+            android:background="#f9ca24"
+            android:text="@string/hotelbutton"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
